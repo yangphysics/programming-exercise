@@ -1,7 +1,14 @@
 # 给定一 Hash，输出有最大 value 的 key
 
 def find_max(hash)
-  # ...
+  imax, max = hash.first()
+  hash.each do |name,value|
+      if max < value
+          imax = name
+          max = value
+      end
+  end
+  imax
 end
 
 h = {
