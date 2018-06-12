@@ -2,8 +2,13 @@
 
 def find_even_keys(hash)
 
-  # ... (请回传一个数组)
-
+  keys = []
+  hash.each do |index, value|
+      if value%2 == 0
+          keys << index
+      end
+  end
+  keys
 end
 
 h = {
