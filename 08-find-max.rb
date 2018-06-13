@@ -11,4 +11,6 @@ z = gets
 
 # ....
 
-puts "最大的数是 ________(x或y或z)"
+max = [x,y,z].map{|x| x.to_i}.max
+
+puts "最大的数是 #{max}"
